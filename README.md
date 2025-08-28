@@ -1,5 +1,7 @@
 # 👋 Olá! Eu sou Felipe Moisés
 
+Bem-vindo ao meu portfólio pessoal! Desenvolvido em HTML, CSS e JavaScript, ele reúne minhas ideias, projetos e habilidades em um design moderno, responsivo e interativo. Este espaço é um reflexo do meu aprendizado e da minha criatividade, e estará sempre em evolução, com novas ferramentas e projetos sendo constantemente desenvolvidos para mostrar meu crescimento e paixão pela tecnologia.
+
 🎯 Desenvolvedor em formação | 🚀 Apaixonado por tecnologia e criatividade  
 💻 Estudando Front-End, com curiosidade por Back-End e Segurança Cibernética  
 📍 São Paulo - SP | 🇧🇷
