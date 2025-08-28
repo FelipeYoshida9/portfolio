@@ -1,0 +1,305 @@
+/* ============================================
+   Reset e corpo
+============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  background: #0a0a0a;
+  overflow-x: hidden;
+}
+
+/* ============================================
+   Cabeçalho
+============================================ */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(20,20,20,0.5);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,255,255,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00ffff;
+}
+
+#menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#menu li a:hover {
+  color: #00ffff;
+}
+
+#btn-mobile {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#toggle-theme {
+  margin-left: 1rem;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ============================================
+   Hero
+============================================ */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 span {
+  color: #00ffff;
+}
+
+.btn {
+  display: inline-block;
+  margin: 1rem auto 0 auto;
+  padding: 0.8rem 1.8rem;
+  border-radius: 15px;
+  text-decoration: none;
+  background: rgba(0,255,255,0.1);
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: rgba(0,255,255,0.2);
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+  transform: translateY(-5px);
+}
+
+/* ============================================
+   Seções e títulos
+============================================ */
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  color: #00ffff;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+/* ============================================
+   Habilidades e Projetos
+============================================ */
+.skills, .projetos-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0,255,255,0.3);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 30px rgba(0,255,255,0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 16px 50px rgba(0,255,255,0.3);
+}
+
+/* ============================================
+   Sobre Mim
+============================================ */
+#sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* título centralizado */
+}
+
+#sobre h2 {
+  margin-bottom: 2rem;
+}
+
+.sobre-card {
+  max-width: 700px;
+  width: 100%;
+  text-align: left; /* conteúdo à esquerda */
+  padding: 2rem;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0,255,255,0.3);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0,255,255,0.1);
+  margin: 1rem auto;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.sobre-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 16px 50px rgba(0,255,255,0.3);
+}
+
+.sobre-card h3 {
+  color: #00ffff;
+  margin-bottom: 0.8rem;
+}
+
+.sobre-card ul {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.sobre-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.sobre-card a {
+  color: #00ffff;
+  text-decoration: underline;
+}
+
+/* ============================================
+   Contato
+============================================ */
+#contato ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#contato ul li a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contato ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   Footer
+============================================ */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(20,20,20,0.5);
+  border-top: 1px solid rgba(0,255,255,0.2);
+}
+
+/* ============================================
+   Responsividade
+============================================ */
+@media (max-width: 768px) {
+  #menu {
+    display: none;
+    flex-direction: column;
+    background: rgba(20,20,20,0.5);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border: 1px solid rgba(0,255,255,0.2);
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  #menu.active {
+    display: flex;
+  }
+
+  #btn-mobile {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .card, .sobre-card {
+    width: 90%;
+  }
+}
+/* ============================================
+   Container principal com camadas e profundidade
+============================================ */
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0 auto;
+  perspective: 1000px; /* ativa o efeito 3D para camadas internas */
+  overflow-x: hidden;
+  background: linear-gradient(145deg, #0a0a0a, #111, #0a0a0a); /* fundo escuro degradê */
+}
+
+/* Camadas de fundo leves, se você quiser elementos flutuando atrás */
+.container::before,
+.container::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0,255,255,0.05) 0%, transparent 70%);
+  animation: floatLayer 20s linear infinite;
+  pointer-events: none; /* não atrapalha clique */
+  z-index: 0;
+}
+
+.container::after {
+  background: radial-gradient(circle, rgba(0,255,255,0.03) 0%, transparent 70%);
+  animation-duration: 35s;
+}
+
+/* Animação suave de movimento das camadas */
+@keyframes floatLayer {
+  0% { transform: translate3d(0,0,0) rotate(0deg); }
+  50% { transform: translate3d(30px,20px,0) rotate(180deg); }
+  100% { transform: translate3d(0,0,0) rotate(360deg); }
+}
+
+/* Ajuste de todos os elementos dentro do container para ficarem acima das camadas */
+.container > * {
+  position: relative;
+  z-index: 1;
+}
